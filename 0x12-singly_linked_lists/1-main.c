@@ -16,6 +16,8 @@ int main(void)
 	list_t hello = {"World", 5, NULL};
 	size_t n;
 
+	size_t list_len(const list_t *h);
+
 	head = &hello;
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
