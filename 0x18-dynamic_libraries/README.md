@@ -1,24 +1,33 @@
-# 0x18 C - Dynamic Libraries
+# C Static Libraries
 
-In this project, I will be tackling the following tasks related to dynamic libraries in C. The tasks cover creating dynamic libraries, generating them from various source files, and exploring the interaction between C and Python. The numbering starts from 0.
+Welcome to this README, where we explore the world of C static libraries. Static libraries are an essential tool in C programming for bundling multiple object files into a single, portable, and efficient library.
 
-## Tasks Overview
+## What Are Static Libraries?
 
-### Task 0: A library is not a luxury but one of the necessities of life
+A static library, also known as an "archive library" or simply a "library," is a collection of object files that have been packaged together into one file. These object files can contain functions, variables, or other code that you want to reuse across multiple programs.
 
-Create the dynamic library `libdynamic.so` containing functions for character manipulation, string operations, and mathematical calculations. Prototypes are provided in the `main.h` file.
+## Benefits of Using Static Libraries
 
-### Task 1: Without libraries what have we? We have no past and no future
+- **Code Reusability**: Static libraries allow you to reuse code across multiple programs, reducing redundancy and code maintenance.
 
-Write a script to create a dynamic library named `liball.so` from all the .c files in the current directory.
+- **Improved Compilation Times**: Using pre-compiled libraries can significantly speed up the compilation process, especially for large projects.
 
-### Task 2: Let's call C functions from Python
+- **Portability**: Static libraries are self-contained, making it easier to distribute your code to other developers or systems without worrying about dependencies.
 
-Create a dynamic library with C functions that can be called from Python. The goal is to enhance interoperability between the two languages.
+## Creating Static Libraries
 
-### Task 3: Code injection: Win the Giga Millions!
+Creating a static library involves several steps, including compiling the source files into object files and then bundling these object files into a library file using the `ar` utility. Once created, you can link this library with your C programs to utilize the functions and code contained within.
 
-Given the Giga Millions program and the opportunity to run two commands on the same server, attempt to increase the chances of winning the jackpot using code injection. The use of LD_PRELOAD is encouraged.
+## How to Create and Use Static Libraries
 
-*Tip: LD_PRELOAD*
+Detailed steps for creating and using static libraries can be found in the documentation of your C compiler, such as GCC for Linux or Microsoft Visual Studio for Windows.
 
+## Resources for Learning More
+
+- [Creating and Using Static Libraries in C (Tutorial)](https://www.geeksforgeeks.org/static-variables-in-c/)
+
+- [Creating and Managing Static Libraries (GCC Documentation)](https://gcc.gnu.org/onlinedocs/gcc/Creating-a-Static-1.html)
+
+- [Understanding Static Libraries (YouTube)](https://www.youtube.com/watch?v=r0tfHSa9WUI)
+
+By mastering static libraries in C, you'll become a more efficient and effective programmer, able to manage code more effortlessly and build better-structured applications.
